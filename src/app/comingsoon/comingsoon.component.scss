@@ -9,6 +9,7 @@
 body
 {
   background: #312747;
+
 }
 header{
   position:absolute;
@@ -22,6 +23,12 @@ header{
   z-index: 10;
 }
 
+
+
+.auth
+{
+  
+}
 header .logo
 {
   position: relative;
@@ -63,7 +70,7 @@ section
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 0 100px;
 }
 section .contentBx
@@ -74,14 +81,13 @@ section .contentBx
 }
 section .contentBx h1
 {
-  font-size: 40px;
+  font-size: 70px;
   color: #fff;
   text-transform: uppercase;
-  
 }
 section  .contentBx p
 {
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -89,7 +95,6 @@ section .contentBx .countdown-timer
 {
   display: flex;
   margin: 20px 0;
-
 }
 section .contentBx .countdown-timer .time-block
  {
@@ -104,33 +109,15 @@ section .contentBx .countdown-timer .time-block
   font-weight: 700;
   padding: 10px 5px 15px;
   border-radius: 4px;
-  color: #ff0083;
-
+  color: #ff0083; 
 } 
 section .contentBx .countdown-timer .time-block span
  {
   margin-top: -10px;
   font-size: 20px;
-  font-weight: 700;
-  color:#ff0083;
+  font-weight: 600;
+  color: #ff0083; 
 } 
-section .time-block
-{
-  padding-top: 20px;
-        margin: 0 10px;
-}
-section .time-digit
-{
-  font-size: 50px; 
-  color: #ff0083 ;
-  font-weight: bold;
-}
-
-ection .time-label
-{
-  font-size: 25px;
-  color: #312747 ;
-}
 section .contentBx a
  {
   position: absolute;
@@ -148,7 +135,6 @@ section .imgBx {
   position: relative;
   padding-left: 30px;
   max-width: 500px;
-
   width: 100px;
   margin-top: 100px;
   z-index: 1;
@@ -240,46 +226,28 @@ section .sci li a{
   height: 40px;
   cursor: pointer;
 }
-@media (max-width: 991px)
-{
-  section 
-  {
-    flex-direction: column;
-    padding-top: 150px;
-    height: auto;
-  }
-  section .contentBx
-  {
-    max-width: 100%;
-
-  }
-  section .imgBx
-  {
-    margin-top:  0;
-  }
-}
 @media (max-width: 767px)
 {
   header 
   { 
-    padding: 40px 100px; 
+    padding: 50px 100px; 
   }
   section 
   {
     flex-direction: column;
     padding: 120px 50px 100px; 
-    height: auto;
+    height: 80vh;
   }
   section .contentBx h2 
   {
-    font-size: 40px;
+    font-size: 20px;
+
   }
   section .contentBx p 
   {
-    font-size: 16px;
+    font-size: 20px;
   }
-
-  section .contentBx .countdown-timer .time-block
+  section .contentBx .countdown-timer .time-blocl
   {
     font-size: 20px;
     min-width: 70px;
@@ -287,15 +255,13 @@ section .sci li a{
   }
   section .contentBx .countdown-timer .time-block 
   {
-    font-size: 14px;
+    font-size: 14px
   }
-
-  section .contentBx
+  section .contentBx a
    {
     position: relative;
     margin-top: 10px;
     display: inline-block;
-    background: #ff0083;
     color: #fff;
     font-size: 20px;
     letter-spacing: 2px;
@@ -324,5 +290,97 @@ newsletter{
 }
 }
 
+@media (max-width: 425px)
+ {
+  header
+  {
+    padding: 20px;
+  }
+ 
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li
+  {
+    padding-left: 400px;
+  }
+  header nav ul li a
+  {
+    font-size: 24px;
+    padding-right: 20px;
+  }
+  section 
+  {
+    padding: 10px;
+  }
+  section .contentBx
+  {
+    padding-left: 220px;
+  }
+  section .contentBx h1
+  {
+    padding-top: 30px;
+    text-align: justify;
+    font-size: 50px;
+    font-weight: 800;
+    
 
+  }
+  section .contentBx p 
+  {
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+  
+  }
 
+  section .contentBx .countdown-timer .time-block 
+  {
+  
+    font-size: 14px;
+    min-width: 50px;
+    margin-right: 5px;
+  }
+  section .contentBx a 
+  {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  section .imgBx {
+    position: absolute;
+    padding: 0;
+    top: 500px;
+    bottom:-200px;
+    right: 0;
+    margin-left: 100px;
+  }
+  section .wave
+  {
+    position: absolute;
+    bottom: -500px;
+    padding: 0;
+    right: 0;
+    pointer-events: none;
+    margin-right: -400px;
+    z-index: 1;
+  }
+  section .sci 
+  {
+    left: 20px;
+  }
+  
+  .newsletter 
+  {
+    width: 100%;
+    padding: 20px;
+  }
+  .newsletter h2 
+  {
+    font-size: 28px;
+  }
+  .newsletter .inputBox input[type="submit"] 
+  {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
